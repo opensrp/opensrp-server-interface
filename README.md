@@ -1,4 +1,4 @@
-# opensrp-server-api
+# opensrp-server-interface
 [![Build Status](https://travis-ci.org/OpenSRP/opensrp-server-interface.svg?branch=master)](https://travis-ci.org/OpenSRP/opensrp-server-interface) [![Coverage Status](https://coveralls.io/repos/github/OpenSRP/opensrp-server-interface/badge.svg?branch=master)](https://coveralls.io/github/OpenSRP/opensrp-server-interface?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/640e857cfda44861911802ce43bec49d)](https://www.codacy.com/app/OpenSRP/opensrp-server-interface?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=OpenSRP/opensrp-server-interface&amp;utm_campaign=Badge_Grade)
 
 Instructions
