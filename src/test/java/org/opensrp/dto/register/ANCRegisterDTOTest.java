@@ -15,20 +15,21 @@ import nl.jqno.equalsverifier.Warning;
  * Created by real on 13/07/17.
  */
 public class ANCRegisterDTOTest {
-    @Test
-    public void testEqualsAndHashCode() {
-        EqualsVerifier.forClass(ANCRegisterDTO.class).suppress(Warning.NONFINAL_FIELDS).verify();
-    }
-
-    @Test
-    public void testConstructor_toString() {
-        List<ANCRegisterEntryDTO> ancRegisterEntries = new ArrayList<>();
-        ANCRegisterEntryDTO ancRegisterEntryDTO = new ANCRegisterEntryDTO();
-        ancRegisterEntries.add(ancRegisterEntryDTO.withANCNumber("anc1"));
-        ANCRegisterDTO ancRegisterDTO = new ANCRegisterDTO(ancRegisterEntries);
-
-        assertTrue(ancRegisterDTO.toString().contains("ancNumber=anc1"));
-        assertFalse(ancRegisterDTO.toString().contains("registrationDate=2017-07-13"));
-    }
-
+	
+	@Test
+	public void testEqualsAndHashCode() {
+		EqualsVerifier.forClass(ANCRegisterDTO.class).suppress(Warning.NONFINAL_FIELDS).verify();
+	}
+	
+	@Test
+	public void testConstructor_toString() {
+		List<ANCRegisterEntryDTO> ancRegisterEntries = new ArrayList<>();
+		ANCRegisterEntryDTO ancRegisterEntryDTO = new ANCRegisterEntryDTO();
+		ancRegisterEntries.add(ancRegisterEntryDTO.withANCNumber("anc1"));
+		ANCRegisterDTO ancRegisterDTO = new ANCRegisterDTO(ancRegisterEntries);
+		
+		assertTrue(ancRegisterDTO.toString().contains("ancNumber=anc1"));
+		assertFalse(ancRegisterDTO.toString().contains("registrationDate=2017-07-13"));
+	}
+	
 }
