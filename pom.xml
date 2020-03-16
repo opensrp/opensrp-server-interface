@@ -17,7 +17,7 @@
 		<main.basedir>${project.basedir}</main.basedir>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<nexus-staging-maven-plugin.version>1.5.1</nexus-staging-maven-plugin.version>
-		<jackson.version>1.9.7</jackson.version>
+		<jackson.version>2.10.2</jackson.version>
 	</properties>
 
 	<distributionManagement>
@@ -75,8 +75,8 @@
 			<version>2.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-core-asl</artifactId>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
 		<dependency>
