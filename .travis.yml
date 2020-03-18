@@ -1,5 +1,6 @@
 language: java
 sudo: required
+jdk: openjdk11
 script:
   - javac -version
   - java -version
