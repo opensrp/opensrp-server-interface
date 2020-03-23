@@ -1,11 +1,11 @@
 package org.opensrp.dto.report;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.codehaus.jackson.annotate.JsonProperty;
 import org.opensrp.dto.LocationDTO;
 
 public class AggregatedReportsDTO {
