@@ -12,8 +12,6 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.Warning;
 
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by real on 13/07/17.
