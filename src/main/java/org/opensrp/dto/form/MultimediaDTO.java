@@ -5,6 +5,8 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+import java.util.Date;
+
 public class MultimediaDTO {
 	
 	@JsonProperty
@@ -21,6 +23,15 @@ public class MultimediaDTO {
 	
 	@JsonProperty
 	private String fileCategory;
+
+	@JsonProperty
+	private Date dateUploaded = new Date();
+
+	@JsonProperty
+	private String summary;
+
+	@JsonProperty
+	private String originalFileName;
 	
 	public MultimediaDTO() {
 		
@@ -53,7 +64,19 @@ public class MultimediaDTO {
 	public String getFileCategory() {
 		return this.fileCategory;
 	}
-	
+
+	public Date getDateUploaded() {
+		return dateUploaded;
+	}
+
+	public String getSummary() {
+		return summary;
+	}
+
+	public String getOriginalFileName() {
+		return originalFileName;
+	}
+
 	@Override
 	public final boolean equals(Object o) {
 		return EqualsBuilder.reflectionEquals(this, o);
@@ -71,6 +94,21 @@ public class MultimediaDTO {
 	
 	public MultimediaDTO withFilePath(String filePath) {
 		this.filePath = filePath;
+		return this;
+	}
+
+	public MultimediaDTO withDateUploaded(Date dateUploaded) {
+		this.dateUploaded = dateUploaded;
+		return this;
+	}
+
+	public MultimediaDTO withSummary(String summary) {
+		this.summary = summary;
+		return this;
+	}
+
+	public MultimediaDTO withOriginalFileName(String originalFileName) {
+		this.originalFileName = originalFileName;
 		return this;
 	}
 	
