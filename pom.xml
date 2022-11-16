@@ -17,7 +17,7 @@
 		<main.basedir>${project.basedir}</main.basedir>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<nexus-staging-maven-plugin.version>1.5.1</nexus-staging-maven-plugin.version>
-		<jackson.version>2.10.2</jackson.version>
+		<jackson.version>2.12.7.1</jackson.version>
 	</properties>
 
 	<distributionManagement>
